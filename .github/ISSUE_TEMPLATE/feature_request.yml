@@ -1,0 +1,41 @@
+name: Feature request
+description: Suggest something Olive should be able to do
+labels: ["enhancement"]
+body:
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - VS Code extension
+        - Mac app
+        - iPhone / iPad app
+        - All of them
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: >
+        The situation, not the solution. What does the document look like, and where
+        does Olive get in the way today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like Olive to do?
+    validations:
+      required: true
+  - type: textarea
+    id: markdown
+    attributes:
+      label: Example Markdown
+      description: If this is about a construct Olive should understand, paste an example.
+      render: markdown
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: How do you handle it now?
+      description: Another extension, an editing habit, or giving up on it.

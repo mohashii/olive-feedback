@@ -1,0 +1,68 @@
+# Olive Markdown Editor — End User License Agreement
+
+Copyright (c) 2026 Mohashi. All rights reserved.
+
+This end user license agreement ("Agreement") applies to the Olive Markdown
+Editor extension for Visual Studio Code, including all files distributed with
+it (the "Software"), except for the third-party components covered by section 8.
+By installing or using the Software, you agree to this Agreement.
+
+## 1. License grant
+
+You are granted a personal, non-exclusive, non-transferable license to install
+and use the Software for any purpose, including commercial work, on devices
+you control.
+
+## 2. Price
+
+The Software is currently provided free of charge. If a future version is
+offered for a fee, versions that were distributed free of charge will remain
+usable free of charge.
+
+## 3. Restrictions
+
+You may not:
+
+- redistribute, republish, sell, rent, or sublicense the Software, whether
+  modified or unmodified;
+- distribute derivative works based on the Software;
+- reverse engineer, decompile, or disassemble the Software, except to the
+  extent such a restriction is prohibited by applicable law.
+
+You may modify your own installed copy of the Software for your own use. Such
+a modified copy may not be distributed to anyone else, and the author provides
+no support or warranty for it.
+
+## 4. Ownership
+
+The Software is licensed, not sold. The author retains all rights, title, and
+interest in the Software. Your documents remain entirely yours; the Software
+claims no rights over content you create or edit with it.
+
+## 5. Data handling
+
+The Software performs no network communication and collects no telemetry. It
+reads and writes only the Markdown files and referenced local images in your
+workspace, through Visual Studio Code's own APIs.
+
+## 6. No warranty
+
+The Software is provided "as is", without warranty of any kind, express or
+implied, including but not limited to the warranties of merchantability,
+fitness for a particular purpose, and non-infringement. In no event shall the
+author be liable for any claim, damages, or other liability arising from the
+use of the Software.
+
+## 7. Termination
+
+This Agreement terminates automatically if you violate its terms. Upon
+termination you must uninstall the Software.
+
+## 8. Third-party components
+
+The Software includes open-source components listed in THIRD-PARTY-NOTICES.md,
+including the KaTeX web fonts, which are licensed under the SIL Open Font
+License 1.1. Those components are licensed to you under their own licenses, not
+under this Agreement. Where this Agreement and such a license differ with
+respect to a component, that component's own license governs, and nothing in
+this Agreement limits the rights it grants you.

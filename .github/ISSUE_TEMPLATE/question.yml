@@ -1,0 +1,22 @@
+name: Question
+description: Ask how something works
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        [FAQ.md](https://github.com/mohashii/olive-feedback/blob/main/FAQ.md) covers what Olive does and does not do, and
+        [TROUBLESHOOTING.md](https://github.com/mohashii/olive-feedback/blob/main/TROUBLESHOOTING.md) covers the common
+        "it isn't working" cases.
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+    validations:
+      required: true
+  - type: input
+    id: version-olive
+    attributes:
+      label: Olive version
+      description: If the answer might depend on it.
+      placeholder: "0.1.0"

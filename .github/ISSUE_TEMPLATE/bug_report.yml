@@ -1,0 +1,105 @@
+name: Bug report
+description: Something renders, saves or behaves incorrectly
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. **Please do not paste confidential documents** — reduce the
+        file to the smallest snippet that still reproduces the problem.
+
+        For a security vulnerability, use
+        [private reporting](https://github.com/mohashii/olive-feedback/security/advisories/new) instead of this form.
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: Which Olive is this? Only the VS Code extension has been released so far.
+      options:
+        - VS Code extension
+        - Mac app
+        - iPhone / iPad app
+        - Not sure
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: What kind of problem is it?
+      options:
+        - Markdown came out wrong (broken, reformatted, or lost)
+        - Math (KaTeX) renders or edits incorrectly
+        - Conflict with VS Code or another extension
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: markdown
+    attributes:
+      label: Minimal Markdown that reproduces it
+      description: >
+        The smallest document that still shows the problem. If the file came out wrong
+        after saving, paste the input and the output. This is the single most useful
+        thing in a report.
+      render: markdown
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open the file above in Olive
+        2. Put the cursor at …
+        3. Press …
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected, and what happened instead
+    validations:
+      required: true
+  - type: input
+    id: version-olive
+    attributes:
+      label: Olive version
+      description: Extensions view → Olive Markdown Editor, or `code --list-extensions --show-versions | grep olive`
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: input
+    id: version-host
+    attributes:
+      label: VS Code version
+      description: Code → About Visual Studio Code (Help → About on Windows and Linux)
+      placeholder: "1.129.1"
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: "macOS 15.2 (Apple silicon) / Windows 11 / Ubuntu 24.04"
+    validations:
+      required: true
+  - type: dropdown
+    id: remote
+    attributes:
+      label: Are you working locally or remotely?
+      description: Remote setups are untested in this release, so this changes how the report is read.
+      options:
+        - Local folder
+        - SSH
+        - WSL
+        - Dev Container
+        - Codespaces
+        - Other / not sure
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I checked [TROUBLESHOOTING.md](https://github.com/mohashii/olive-feedback/blob/main/TROUBLESHOOTING.md)
+        - label: This snippet contains nothing confidential
+          required: true
