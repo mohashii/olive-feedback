@@ -4,22 +4,18 @@
 exists so that documentation and issue tracking are public: the FAQ, troubleshooting
 notes, and the issue tracker where bugs, feature requests and questions are handled.
 
-Olive lets you edit technical Markdown like a document — headings, rich text, code, TeX
-math, tables and structured blocks — without stopping to manage syntax. The file on disk
-stays plain Markdown.
+Olive lets you write Markdown without seeing the syntax. Formatting stays visible even under the cursor — headings, rich text, code, TeX math, tables and structured blocks — while the file on disk stays plain Markdown.
 
-![Create a technical document, format text, select and move multiple blocks, edit Markdown source and render a Mermaid diagram](media/olive-demo.gif)
+![A learning log opened as Markdown source in VS Code, switched to Olive, and edited visually: bold text, inline code and inline math form from typed Markdown; the formula updates while its LaTeX is edited in a popup; a Mermaid diagram renders; a table column moves from its right-click menu; and the file returns to plain Markdown source](media/olive-hero.gif)
 
 ## Where to get it
 
 | Platform | Status |
 | --- | --- |
-| **VS Code extension** | [Olive Markdown Editor on the Marketplace](https://marketplace.visualstudio.com/items?itemName=mohashi.olive) — preview |
+| **VS Code extension** | [Olive — Visual Markdown Editor on the Marketplace](https://marketplace.visualstudio.com/items?itemName=mohashi.olive-markdown) |
 | Mac, iPad, iPhone apps | In development, not released |
 
-Full documentation for the VS Code extension — supported blocks, keyboard shortcuts,
-how to open a file in Olive — lives on its
-[Marketplace page](https://marketplace.visualstudio.com/items?itemName=mohashi.olive).
+Full documentation for the VS Code extension — supported blocks, keyboard shortcuts, how to open a file in Olive, exporting to HTML and PDF — lives on its [Marketplace page](https://marketplace.visualstudio.com/items?itemName=mohashi.olive-markdown).
 
 ## Reporting something
 
@@ -42,15 +38,14 @@ turn out to have a local cause. [FAQ.md](FAQ.md) covers what Olive does and does
 
 ## Data handling
 
-Olive makes no network requests and collects no telemetry. It reads and writes only the
-Markdown files and referenced local images in your workspace, through VS Code's own
-document APIs. There is no analytics of any kind — this issue tracker is the only way
-problems reach the author, which is why reports matter.
+Olive collects no telemetry and has no analytics of any kind — this issue tracker is the only way problems reach the author, which is why reports matter. It reads and writes the Markdown files and images in your workspace, through VS Code's own document APIs, plus the HTML and PDF files you export.
+
+Olive itself makes one network request, and only if you ask for it: downloading the PDF print engine, after you accept the prompt it shows when it cannot find a Chromium-based browser on your machine. Separately, images that a document references by an `https://` URL are loaded for display, as they would be in any Markdown preview. Nothing else goes online.
 
 ## Changelog
 
 Version history is on the extension's
-[Marketplace Changelog tab](https://marketplace.visualstudio.com/items?itemName=mohashi.olive&ssr=false#version-history).
+[Marketplace Changelog tab](https://marketplace.visualstudio.com/items?itemName=mohashi.olive-markdown&ssr=false#version-history).
 It is not duplicated here.
 
 ## Licence
