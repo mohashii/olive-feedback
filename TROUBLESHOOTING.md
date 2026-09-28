@@ -39,9 +39,7 @@ Keyboard Shortcuts editor (`⌘K ⌘S` / `Ctrl+K Ctrl+S`). Search for the action
 editor shows when another extension or a user binding has claimed the same keys, and you
 can rebind either side.
 
-A few keys belong to the editing surface rather than to a command and cannot be rebound:
-`Shift+Enter` for a hard line break, `⌘⇧↑` / `⌘⇧↓` to move blocks, and `Option/Alt` with
-the arrow keys to move table rows and columns.
+Moving blocks (`⌥↑` / `⌥↓`, `Alt+↑` / `Alt+↓` on Windows and Linux) and opening block actions (`⌃↩` / `Ctrl+Enter`) are commands too, so they can be rebound there. `Shift+Enter` for a hard line break belongs to the editing surface rather than to a command and cannot be rebound. Table rows and columns have no keyboard shortcut; move them from the table's right-click menu or the slash menu.
 
 ## Part of my document shows as a source block instead of rich text
 

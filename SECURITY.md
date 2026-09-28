@@ -8,9 +8,7 @@ Use GitHub's private vulnerability reporting instead:
 [Report a vulnerability](https://github.com/mohashii/olive-feedback/security/advisories/new). The report is visible only to
 you and the author until a fix is published.
 
-Olive makes no network requests and collects no telemetry, so the interesting surface is
-local: what the extension does with the contents of the files it opens, and with links,
-images and embedded content inside a document.
+Olive collects no telemetry, and the only network request it makes itself is downloading the PDF print engine after the user agrees to it. The interesting surface is therefore mostly local: what the extension does with the contents of the files it opens; with links, images (including those a document references by `https://` URL) and embedded content inside a document; and with the HTML and PDF files it exports. The PDF engine download is in scope too.
 
 Please include what an attacker would need to control (a crafted Markdown file, a
 workspace setting, a linked resource), what they gain, and a minimal document that

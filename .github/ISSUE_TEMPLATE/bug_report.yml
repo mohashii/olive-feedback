@@ -62,8 +62,8 @@ body:
     id: version-olive
     attributes:
       label: Olive version
-      description: Extensions view → Olive Markdown Editor, or `code --list-extensions --show-versions | grep olive`
-      placeholder: "0.1.0"
+      description: Extensions view → Olive — Visual Markdown Editor, or `code --list-extensions --show-versions | grep olive`
+      placeholder: "0.6.0"
     validations:
       required: true
   - type: input

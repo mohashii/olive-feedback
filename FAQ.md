@@ -7,15 +7,13 @@ so that documentation and issue tracking are public.
 
 ## Does Olive change my Markdown files?
 
-Only where you edit. Constructs Olive cannot edit as rich text are kept verbatim and
-shown as an explicit source block, so nothing is silently dropped or rewritten. A file
-you open and save without editing is byte-identical to what it was.
+Only where you edit. Constructs Olive cannot edit as rich text are kept verbatim — raw HTML blocks, for example, are shown as a preserved block with their source — so nothing is silently dropped or rewritten. A file you open and save without editing is byte-identical to what it was.
+
+Two actions reach beyond the file in front of you, and both follow from something you did: renaming or moving a note in the Explorer rewrites the links that point at it in other notes (Olive tells you how many), and pasting or dropping an image saves it to an `assets/` folder beside the note.
 
 ## Does Olive take over `.md` files?
 
-No. VS Code's text editor stays the default and you opt in per file, through
-**Open in Olive** or **Reopen Editor With…**. You can make Olive the default yourself
-with `workbench.editorAssociations`; see the Marketplace page.
+No. VS Code's text editor stays the default and you opt in per file, through the Olive icon on the editor title bar, **Open in Olive** in the Explorer, or **Reopen Editor With…**. You can make Olive the default yourself with `workbench.editorAssociations`; see the Marketplace page.
 
 ## How is this different from VS Code's built-in Markdown Editor (Experimental)?
 
@@ -27,14 +25,11 @@ installing Olive does not affect the built-in editor.
 
 ## Does Olive send anything anywhere?
 
-No. No network requests, no telemetry, no analytics. See "Data handling" in the
-[README](README.md#data-handling).
+No telemetry and no analytics. The only network request Olive makes itself is downloading the PDF print engine, and only after you accept the prompt it shows when it cannot find a Chromium-based browser on your machine. Images that a document references by an `https://` URL are loaded for display, as in any Markdown preview. See "Data handling" in the [README](README.md#data-handling).
 
 ## Which Markdown dialect does Olive use?
 
-CommonMark plus GitHub Flavored Markdown (tables, task lists, strikethrough), with
-`$…$` / `$$…$$` for math. Callouts use the blockquote-with-marker form. Anything Olive
-does not recognise is preserved verbatim rather than reformatted.
+CommonMark plus GitHub Flavored Markdown (tables, task lists, strikethrough, footnotes), with `$…$` / `$$…$$` for math. Callouts use the blockquote-with-marker form (`> [!note]`), as GitHub alerts and Obsidian callouts do. Obsidian-style `[[wikilinks]]` already in a file are recognised and left as written; links Olive inserts are ordinary Markdown links. Anything Olive does not recognise is preserved verbatim rather than reformatted.
 
 ## Does it work over SSH, WSL, Dev Containers or Codespaces?
 
@@ -44,7 +39,7 @@ in them.
 
 ## Is it free? Will it stay free?
 
-It is free during preview. If a future version is offered for a fee, versions that were
+It is free. If a future version is offered for a fee, versions that were
 distributed free of charge remain usable free of charge — see
 [LICENSE-extensions](LICENSE-extensions) §2.
 
@@ -56,5 +51,5 @@ same repository for issues.
 ## Where is the changelog?
 
 On the extension's
-[Marketplace Changelog tab](https://marketplace.visualstudio.com/items?itemName=mohashi.olive&ssr=false#version-history).
+[Marketplace Changelog tab](https://marketplace.visualstudio.com/items?itemName=mohashi.olive-markdown&ssr=false#version-history).
 It is deliberately not duplicated here, so there is only one copy to keep correct.
