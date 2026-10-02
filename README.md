@@ -38,9 +38,14 @@ turn out to have a local cause. [FAQ.md](FAQ.md) covers what Olive does and does
 
 ## Data handling
 
-Olive collects no telemetry and has no analytics of any kind — this issue tracker is the only way problems reach the author, which is why reports matter. It reads and writes the Markdown files and images in your workspace, through VS Code's own document APIs, plus the HTML and PDF files you export.
+Olive collects no telemetry and has no analytics of any kind — this issue tracker is the only way problems reach the author, which is why reports matter. It does not send your documents anywhere. The files it reads and writes are listed in section 5 of the [licence](LICENSE-extensions).
 
-Olive itself makes one network request, and only if you ask for it: downloading the PDF print engine, after you accept the prompt it shows when it cannot find a Chromium-based browser on your machine. Separately, images that a document references by an `https://` URL are loaded for display, as they would be in any Markdown preview. Nothing else goes online.
+Olive goes online in two cases only:
+
+- **Images linked by an `https://` URL** in your Markdown are loaded from that URL to show them in the editor, and again when you copy one with **Copy image**, so the image's host sees the request. Images stored in the workspace never leave it.
+- **The PDF print engine** is downloaded only if you accept the prompt Olive shows when it cannot find a Chromium-based browser on your machine for PDF export, or run **Olive: Update PDF engine**.
+
+Nothing else in Olive goes online — exports embed everything locally rather than linking to a CDN.
 
 ## Changelog
 
