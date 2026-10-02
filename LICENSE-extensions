@@ -41,9 +41,23 @@ claims no rights over content you create or edit with it.
 
 ## 5. Data handling
 
-The Software performs no network communication and collects no telemetry. It
-reads and writes only the Markdown files and referenced local images in your
-workspace, through Visual Studio Code's own APIs.
+The Software collects no telemetry and does not send your documents to the author or to anyone else.
+
+The Software connects to the internet only in the following two cases:
+
+- **Images referenced by an `https://` URL.** When a document you open refers to an image by an `https://` URL, the Software loads the image from that URL to display it, and again when you copy it with the Copy image command. The server hosting the image receives that request, including your IP address, as it would from a web browser. When you export a document, the Software does not fetch such images; it leaves them as links in the exported file.
+- **The PDF print engine.** Only if you accept the offer made when exporting to PDF, or run the command **Olive: Update PDF engine**, the Software downloads a print-only browser engine (about 100 MB) from its distributor's servers and stores it in the storage area that Visual Studio Code provides to the Software.
+
+Links in a document that you choose to open outside Visual Studio Code are passed to your default web browser; the Software does not access them itself.
+
+The Software reads and writes files only as needed for the features you use:
+
+- the Markdown files you open and edit;
+- images you add to a document, which it saves in an `assets/` folder beside that document;
+- when you rename or move a file in your workspace, the images in the moved note's `assets/` folder and the links in other Markdown files that refer to the moved files;
+- HTML and PDF files you export, at the location you choose;
+- theme stylesheets, which it reads from your workspace and from your user configuration folder, and creates there only when you ask it to;
+- the print engine described above.
 
 ## 6. No warranty
 
