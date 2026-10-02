@@ -25,7 +25,7 @@ installing Olive does not affect the built-in editor.
 
 ## Does Olive send anything anywhere?
 
-No telemetry and no analytics. The only network request Olive makes itself is downloading the PDF print engine, and only after you accept the prompt it shows when it cannot find a Chromium-based browser on your machine. Images that a document references by an `https://` URL are loaded for display, as in any Markdown preview. See "Data handling" in the [README](README.md#data-handling).
+No telemetry and no analytics, and Olive never sends your documents anywhere. The few cases in which it goes online at all are listed under "Data handling" in the [README](README.md#data-handling).
 
 ## Which Markdown dialect does Olive use?
 
