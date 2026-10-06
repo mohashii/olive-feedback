@@ -25,7 +25,7 @@ installing Olive does not affect the built-in editor.
 
 ## Does Olive send anything anywhere?
 
-No telemetry and no analytics, and Olive never sends your documents anywhere. The few cases in which it goes online at all are listed under "Data handling" in the [README](README.md#data-handling).
+No telemetry and no analytics, and Olive never sends your documents anywhere. The few cases in which it goes online at all are listed under "Network access" in the [privacy policy](PRIVACY.md#network-access).
 
 ## Which Markdown dialect does Olive use?
 
