@@ -14,7 +14,7 @@ body:
     id: platform
     attributes:
       label: Platform
-      description: Which Olive is this? Only the VS Code extension has been released so far.
+      description: Which Olive is this?
       options:
         - VS Code extension
         - Mac app
@@ -29,6 +29,7 @@ body:
       options:
         - Markdown came out wrong (broken, reformatted, or lost)
         - Math (KaTeX) renders or edits incorrectly
+        - Saving, syncing or files (Mac app)
         - Conflict with VS Code or another extension
         - Something else
     validations:
@@ -62,18 +63,18 @@ body:
     id: version-olive
     attributes:
       label: Olive version
-      description: Extensions view → Olive — Visual Markdown Editor, or `code --list-extensions --show-versions | grep olive`
-      placeholder: "0.6.0"
+      description: "Mac app: Olive → About Olive. VS Code: Extensions view → Olive — Visual Markdown Editor, or `code --list-extensions --show-versions | grep olive`"
+      placeholder: "0.1.0"
     validations:
       required: true
   - type: input
     id: version-host
     attributes:
-      label: VS Code version
-      description: Code → About Visual Studio Code (Help → About on Windows and Linux)
+      label: VS Code version (VS Code extension only)
+      description: Code → About Visual Studio Code (Help → About on Windows and Linux). Leave empty for the Mac app.
       placeholder: "1.129.1"
     validations:
-      required: true
+      required: false
   - type: input
     id: os
     attributes:
@@ -84,10 +85,11 @@ body:
   - type: dropdown
     id: remote
     attributes:
-      label: Are you working locally or remotely?
-      description: Remote setups are untested in this release, so this changes how the report is read.
+      label: Where are the files?
+      description: Remote setups in VS Code are untested, and on the Mac a sync service can change files while Olive has them open, so this changes how the report is read.
       options:
         - Local folder
+        - iCloud Drive, Google Drive or another synced folder (Mac app)
         - SSH
         - WSL
         - Dev Container
@@ -100,6 +102,6 @@ body:
     attributes:
       label: Before submitting
       options:
-        - label: I checked [TROUBLESHOOTING.md](https://github.com/mohashii/olive-feedback/blob/main/TROUBLESHOOTING.md)
+        - label: I checked [Troubleshooting](https://github.com/mohashii/olive-feedback/blob/main/guide/troubleshooting.md)
         - label: This snippet contains nothing confidential
           required: true

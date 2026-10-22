@@ -1,8 +1,8 @@
 # Olive
 
 **This is not the source repository for Olive.** Olive is closed source. This repository
-exists so that documentation and issue tracking are public: the FAQ, troubleshooting
-notes, and the issue tracker where bugs, feature requests and questions are handled.
+exists so that documentation and issue tracking are public: the [user guide](guide/README.md),
+and the issue tracker where bugs, feature requests and questions are handled.
 
 Olive lets you write Markdown without seeing the syntax. Formatting stays visible even under the cursor — headings, rich text, code, TeX math, tables and structured blocks — while the file on disk stays plain Markdown.
 
@@ -12,10 +12,11 @@ Olive lets you write Markdown without seeing the syntax. Formatting stays visibl
 
 | Platform | Status |
 | --- | --- |
+| **Mac** | [Download from Releases](https://github.com/mohashii/olive-feedback/releases/latest) — macOS 13.3 or later, Apple Silicon and Intel |
 | **VS Code extension** | [Olive — Visual Markdown Editor on the Marketplace](https://marketplace.visualstudio.com/items?itemName=mohashi.olive-markdown) |
-| Mac, iPad, iPhone apps | In development, not released |
+| iPad and iPhone apps | In development, not released |
 
-Full documentation for the VS Code extension — supported blocks, keyboard shortcuts, how to open a file in Olive, exporting to HTML and PDF — lives on its [Marketplace page](https://marketplace.visualstudio.com/items?itemName=mohashi.olive-markdown).
+How to use Olive — on the Mac and in VS Code — is in the **[user guide](guide/README.md)**: blocks, keyboard shortcuts, folders and saving on the Mac, opening a file in Olive in VS Code, exporting to HTML and PDF.
 
 ## Reporting something
 
@@ -33,8 +34,8 @@ Two things do not belong in a public issue:
   reproduces the problem, and strip anything you would not publish.
 - **Security vulnerabilities.** See [SECURITY.md](SECURITY.md) for the private channel.
 
-Before opening a bug, [TROUBLESHOOTING.md](TROUBLESHOOTING.md) covers the failures that
-turn out to have a local cause. [FAQ.md](FAQ.md) covers what Olive does and does not do.
+Before opening a bug, [Troubleshooting](guide/troubleshooting.md) covers the failures that
+turn out to have a local cause. The [FAQ](guide/faq.md) covers what Olive does and does not do.
 
 ## Data handling
 
@@ -42,9 +43,8 @@ Olive collects no telemetry and has no analytics of any kind — this issue trac
 
 ## Changelog
 
-Version history is on the extension's
+The Mac app's release notes are on [Releases](https://github.com/mohashii/olive-feedback/releases). The VS Code extension's version history is on its
 [Marketplace Changelog tab](https://marketplace.visualstudio.com/items?itemName=mohashi.olive-markdown&ssr=false#version-history).
-It is not duplicated here.
 
 ## Licence
 

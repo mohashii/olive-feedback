@@ -61,7 +61,7 @@ Olive follows your VS Code color theme, light or dark, with no setup.
 - **Untrusted workspaces** (Restricted Mode) and **virtual workspaces** — Olive is disabled in both, and VS Code hides it from **Reopen Editor With…**.
 - **Remote, SSH, WSL and Dev Containers** — untested. It may work, but nothing has been verified.
 
-If Olive is missing or a file still opens as text after you trust the folder, close the tab and open the file again; see [Troubleshooting](https://github.com/mohashii/olive-feedback/blob/main/TROUBLESHOOTING.md).
+If Olive is missing or a file still opens as text after you trust the folder, close the tab and open the file again; see [Troubleshooting](troubleshooting.md#i-trusted-the-folder-but-the-file-still-opens-as-plain-text).
 
 ---
 

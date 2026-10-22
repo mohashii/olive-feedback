@@ -36,6 +36,7 @@ This guide covers Olive for Mac and the Olive extension for Visual Studio Code. 
 
 ## Help
 
-- [FAQ](https://github.com/mohashii/olive-feedback/blob/main/FAQ.md) and [troubleshooting](https://github.com/mohashii/olive-feedback/blob/main/TROUBLESHOOTING.md)
+- [FAQ](faq.md) — which versions exist, what Olive does to your files, updates
+- [Troubleshooting](troubleshooting.md) — things that turn out to have a local cause, on Mac and in VS Code
 - [Privacy policy](https://github.com/mohashii/olive-feedback/blob/main/PRIVACY.md)
 - Bugs, feature requests and questions: [open an issue](https://github.com/mohashii/olive-feedback/issues)
