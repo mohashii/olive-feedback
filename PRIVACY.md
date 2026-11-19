@@ -1,6 +1,6 @@
 ## Privacy Policy
 
-**Last updated: 2026-10-21**
+**Last updated: 2026-11-06**
 
 Olive is a Markdown editor for macOS, iOS, and Visual Studio Code, developed by Mohashi.
 
@@ -11,7 +11,7 @@ Olive is a Markdown editor for macOS, iOS, and Visual Studio Code, developed by 
 ### What Olive stores
 
 - **Your notes** are plain `.md` files in a folder you pick. Olive never moves them anywhere you did not choose.
-- **Local application data** — unsaved drafts, the file recovery history, your theme, and your window and sidebar preferences — is stored on your device only, in the app's own storage. Deleting the app deletes it.
+- **Local application data** — unsaved drafts, the file recovery history, a copy of the text of the notes Olive has read (so that search, offline reading and opening notes that are not downloaded to the device work without reading every file again), your theme, and your window and sidebar preferences — is stored on your device only, in the app's own storage. Copies of notes in a folder you have not opened for 90 days are deleted automatically. Deleting the app deletes all of it.
 - If you keep your folder in iCloud Drive, Google Drive, or another file-syncing service, that service syncs the files as it would for any other folder on your device. Olive is not involved in that transfer, and the service's own privacy policy applies.
 
 ### Network access
