@@ -11,7 +11,7 @@ At the end of the page, a **Save Markdown** button lets the reader download the 
 ## In the Mac app
 
 - **A note** — **File → Export as HTML…** or **File → Export as PDF…**. The PDF is made by macOS itself, so no browser is needed.
-- **A whole folder** — **Export as HTML…** in a folder's right-click menu, or in the **…** menu at the top of the sidebar for everything. You choose which notes to include, and Olive writes one HTML file with a sidebar for moving between them.
+- **A whole folder** — **Export as HTML…** in a folder's right-click menu, or in the menu on the folder name at the bottom of the sidebar for everything. You choose which notes to include, and Olive writes one HTML file with a sidebar for moving between them.
 - **The Save Markdown button** is set in **Settings → What to add to the end of an exported HTML file**: nothing, a **Save Markdown** button (the default), or a **Save Markdown and images** button that downloads a `.zip`.
 
 ## In VS Code

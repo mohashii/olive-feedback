@@ -12,8 +12,9 @@ Start one with ```` ``` ```` (or `~~~`) at the start of a line, optionally follo
 
 Point at a cell to reveal two small grips: one above its column and one to the left of its row.
 
-- **Click a grip** to select the whole row or column and open its menu.
+- **Click a grip** to select the whole row or column and open its menu. **`Shift`-click** another grip in the same table to select every row or column in between; the menu then acts on all of them.
 - **Drag a grip** to move the row or column. The header row stays where it is.
+- **Click the +** that appears where two rows or two columns meet, on the left or top border, to insert an empty row or column there.
 - **Right-click** a cell for the same actions.
 
 | Action | Notes |

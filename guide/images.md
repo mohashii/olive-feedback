@@ -23,7 +23,7 @@ Click an image to show its toolbar, or right-click it for the same actions:
 
 To resize an image, drag its edge. A resized image is written as an HTML `<img>` tag with a `width`, because Markdown has no way to say how wide an image should be; dragging it back to its natural size returns it to plain `![](…)`.
 
-**In the Mac app:** the full-screen view has a **Save image** button that saves the picture elsewhere on your Mac.
+**In the Mac app:** right-click an image and choose **Save image** to save the picture elsewhere on your Mac.
 
 ## Images when notes move
 

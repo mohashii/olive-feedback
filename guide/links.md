@@ -14,7 +14,7 @@ Clicking a link:
 
 ## Page links
 
-Type `[[` to search the Markdown files in your folder and link one. Olive writes an ordinary Markdown link, `[name](relative/path.md)`, so the note stays readable in any other editor.
+Type `[[` to search the Markdown files in your folder and link one. Type `#` after a note's name — or straight after `[[` for the note you are in — to pick one of its headings instead. Olive writes an ordinary Markdown link, `[name](relative/path.md)` or `[name](relative/path.md#heading)`, so the note stays readable in any other editor.
 
 Obsidian-style wikilinks work too: `[[name]]`, `[[name|label]]`, `[[name#heading]]`, and `[[#heading]]` for a heading in the note you are in. Clicking one opens it. If you write a wikilink out by hand and close the `]]`, it becomes a wikilink there and then, so you can keep writing them if that is your habit — the `[[` search above is simply the way Olive inserts links itself.
 
@@ -27,6 +27,8 @@ When you rename or move a note — in the sidebar of the Mac app, or in VS Code'
 - Inside a `[[…]]`, only the note name is rewritten; an alias after `|` and a `#heading` are left alone.
 - A Markdown link whose text is just the old file name is relabelled with the new one.
 - When notes other than the one you renamed had to change, Olive tells you how many.
+
+Renaming a heading works the same way: when you change a heading's text and move on, links to that heading — in the same note and in other notes — are rewritten to the new text.
 
 **In the Mac app:** the message reads "Updated links in 2 other notes" and has an **Undo** button. If some notes could not be updated, the message says so and stays until you close it.
 

@@ -16,7 +16,7 @@ Olive for Mac needs macOS 13.3 or later. It runs on both Apple Silicon and Intel
 
 ### Olive opened a folder I did not expect
 
-The first time Olive starts on a Mac with iCloud Drive, it creates a folder named **Olive** in iCloud Drive and opens it; if a folder with that name is already there, it opens that one. After that, Olive opens the last folder you used. To work in another folder, click **…** next to the folder name at the top of the sidebar and choose **Open another folder…**. See [Olive for Mac](mac.md#your-first-folder).
+The first time Olive starts on a Mac with iCloud Drive, it creates a folder named **Olive** in iCloud Drive and opens it; if a folder with that name is already there, it opens that one. After that, Olive opens the last folder you used. To work in another folder, click the ⌃⌄ beside the folder name at the bottom of the sidebar and choose **Open another folder…**, or choose **File ▸ Open Folder…**. See [Olive for Mac](mac.md#your-first-folder).
 
 ### A note opens read-only
 
@@ -63,7 +63,7 @@ A workspace-level setting overrides your user setting — check both. Olive neve
 
 Olive's editing commands are ordinary VS Code commands and appear under **Olive** in the Keyboard Shortcuts editor (`⌘K ⌘S` / `Ctrl+K Ctrl+S`). Search for the action there — the editor shows when another extension or a user binding has claimed the same keys, and you can rebind either side.
 
-Moving blocks (`⌥↑` / `⌥↓`, `Alt+↑` / `Alt+↓` on Windows and Linux) and opening block actions (`⌃↩` / `Ctrl+Enter`) are commands too, so they can be rebound there. `Shift+Enter` for a hard line break belongs to the editing surface rather than to a command and cannot be rebound. Table rows and columns have no keyboard shortcut; move them from the table's right-click menu or the slash menu.
+Moving blocks (`⌥↑` / `⌥↓`, `Alt+↑` / `Alt+↓` on Windows and Linux) and opening block actions (`⌘/` / `Ctrl+/`) and **Edit Markdown** (`⌥⌘U` / `Ctrl+Alt+U`) are commands too, so they can be rebound there. `Shift+Enter` for a hard line break belongs to the editing surface rather than to a command and cannot be rebound. Table rows and columns have no keyboard shortcut; move them from the table's right-click menu or the slash menu.
 
 ### Unsaved changes appeared to come back after "Don't Save"
 

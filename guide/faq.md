@@ -33,7 +33,7 @@ A few actions reach beyond the note in front of you, and each follows from somet
 
 No.
 
-- **In the Mac app:** Olive opens a folder of notes. It does not make itself the default app for `.md` files, so double-clicking one in Finder still opens whatever app you had before.
+- **In the Mac app:** Olive offers to open `.md` files — it appears in Finder's **Open With** menu — but it does not make itself the default app, so double-clicking one in Finder still opens whatever app you had before until you choose otherwise. See [Opening a single file](mac.md#opening-a-single-file).
 - **In VS Code:** VS Code's text editor stays the default, and you open a file in Olive yourself — through the Olive icon on the editor title bar, **Open in Olive** in the Explorer, or **Reopen Editor With…**. You can make Olive the default with `workbench.editorAssociations`; see [Olive for Visual Studio Code](vscode.md).
 
 ## Does Olive send anything anywhere?

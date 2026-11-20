@@ -26,7 +26,7 @@ Olive turns Markdown into formatting while you type. Inline patterns convert the
 | `# ` to `###### ` | Heading 1–6 |
 | `- `, `* `, `+ ` | Bulleted list |
 | `1. ` | Numbered list |
-| `[ ] ` or `[x] ` inside a list item | Task list item |
+| `[ ] `, `[] ` or `[x] ` at the start of a paragraph or list item | Task list item |
 | `> ` | Quote |
 | `> [!note] `, `> [!warning] `, … at the start of a quote | Callout |
 | ```` ```lang ```` or `~~~lang` | Code block |
@@ -50,6 +50,8 @@ Patterns such as `**bold**` and `$math$` convert right after a Japanese, Chinese
 ## Line breaks
 
 `Enter` starts a new paragraph or list item. `Shift+Enter` inserts a line break inside the same paragraph.
+
+In the file, a line break is written as a backslash at the end of the line (`\`) in the middle of a paragraph, and as `<br>` at the end of a paragraph, in a heading and in a table cell, where Markdown has no other way to write one. Both are standard Markdown line breaks and look the same in Olive. A line break you did not type keeps the spelling it already had. See [Markdown compatibility](markdown-compatibility.md#line-breaks).
 
 ---
 

@@ -18,13 +18,25 @@ Olive keeps your original text for everything you did not edit. Opening a file a
 
 ## Blocks Olive keeps as written
 
-Raw HTML blocks, and anything else Olive cannot edit as rich text, are shown as a preserved block: a sanitized rendering of what the Markdown means, with a small **Kept as written** label. Click **Edit** on that label, or use **Edit Markdown** from the [block menu](blocks.md#the-block-menu), to change the source in place. You can see both how the block will look and exactly what Olive is not editing for you.
+Raw HTML blocks, and anything else Olive cannot edit as rich text, are shown as a preserved block: a sanitized rendering of what the Markdown means, with no buttons or label on it. Click or tap the block to edit its source in place, with a live preview; clicking a link in the block opens the link instead. If Olive cannot render the block faithfully — a fragment of a table, a `</div>` on its own, an HTML comment — it shows the source itself in a dotted frame labelled **Kept as written**.
 
-Inline HTML inside a paragraph is edited as ordinary text instead. Paired tags such as `<b>x</b>` are shown formatted, `<a href>` works as a link, and empty tags such as `<br>` and `<img>` are shown as single objects you can select and delete. Whatever Olive cannot present is left as literal text, and the original spelling is written back unchanged.
+Inline HTML inside a paragraph is edited as ordinary text instead. Paired tags such as `<b>x</b>` are shown formatted, `<a href>` works as a link, `<br>` is an ordinary line break, and other empty tags such as `<img>` are shown as single objects you can select and delete. Whatever Olive cannot present is left as literal text, and the original spelling is written back unchanged.
 
 A few constructs Olive has no model for, such as `:::note` container directives and definition lists, appear as ordinary paragraphs. They are kept exactly as written.
 
 **In the Mac app:** if a block cannot be written back safely, Olive stops saving that note automatically and says "1 block cannot be saved" next to the note's save status, so nothing is overwritten without you knowing; see [Saving and recovery](saving-and-recovery.md#blocks-olive-cannot-write-back).
+
+## Line breaks
+
+A line break made with `Shift+Enter` is written in whichever standard form fits where it stands:
+
+| Where the line break is | Written as |
+|---|---|
+| In the middle of a paragraph, list item or quote | `\` at the end of the line |
+| At the end of a paragraph, list item or quote | `<br>` |
+| In a heading or a table cell | `<br>` |
+
+The end of a paragraph needs `<br>` because a trailing `\` is read as a literal backslash when nothing follows it. Line breaks already in your file — `\`, two trailing spaces or `<br>` — keep their spelling, even in a paragraph you edit. A paragraph that holds nothing but one line break is written as `<p><br></p>`, the HTML for that paragraph, since Markdown has no way to write it; Olive reads it back as the same paragraph. With two or more line breaks, the paragraph starts with `\` and ends with `<br>`.
 
 ---
 

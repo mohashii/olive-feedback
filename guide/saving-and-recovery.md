@@ -6,16 +6,16 @@ This page is about the Mac app. In VS Code, saving and file history are VS Code'
 
 Olive saves a note by itself about two seconds after you stop typing, and keeps a draft of your edits on this Mac even sooner, so nothing is lost if the app quits before the file is written. `⌘S`, or **Save now** in the note's **…** menu, saves straight away. To save only when you ask, uncheck **Auto-save** in the same menu.
 
-While Olive saves by itself, the note's header says nothing about saving. It shows one of these only when you need to act:
+While Olive saves by itself, the note's header says nothing about saving. It shows one of these only when you need to act, and clicking it does what its last word says:
 
 | Shown | Meaning |
 | --- | --- |
-| ● Unsaved | Auto-save is off and you have edits that are not written yet. `⌘S` writes them |
-| ● Draft saved | Auto-save is off and your edits are kept on this Mac, but not yet written to the file. `⌘S` writes them |
-| ● Auto-save failed | Olive could not write the file. Your edits are kept on this Mac; `⌘S` tries again |
-| ● Draft save failed | Olive could not keep a draft of your edits on this Mac |
-| ● 1 block cannot be saved | See [Blocks Olive cannot write back](#blocks-olive-cannot-write-back) |
+| ● Unsaved — Save | Your edits are not written to the file yet — because **Auto-save** is off, or because Olive could not keep a copy of them on this Mac. Click it, or press `⌘S`, to write them |
+| ● Auto-save failed — Retry | Olive could not write the file. Your edits are kept on this Mac; click it, or press `⌘S`, to try again |
+| ● 1 block cannot be saved — Save… | See [Blocks Olive cannot write back](#blocks-olive-cannot-write-back) |
 | ⚠ Changed externally — Resolve | See [When a file changes outside Olive](#when-a-file-changes-outside-olive) |
+
+In the Mac app, a note with **Auto-save** off and unsaved edits shows **— Edited** after its name instead of **● Unsaved — Save**. Whenever edits are waiting that auto-save will not write, the window's close button shows a dot, as in other Mac apps.
 
 If Olive quits with unsaved edits, they come back the next time you open the note.
 

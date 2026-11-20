@@ -9,13 +9,14 @@ Click the handle, or right-click it, to open the block menu:
 | Item | What it does |
 | --- | --- |
 | Turn into › | Converts the block, keeping its text — the same list as the [slash menu](slash-menu.md)'s **Turn into** |
+| Collapse / Expand | Closes or opens a toggle, or a callout that can fold. Shown only for those blocks |
 | Insert above / Insert below | Opens an empty line above or below the block, ready for typing |
 | Cut, Copy | Puts the block on the clipboard — formatted for apps that accept rich text, as Markdown for plain-text editors |
 | Duplicate | Copies the block directly below itself |
-| Edit Markdown | Opens the block's Markdown source with a live preview; **Apply** (`⌘↩`) writes it back, **Cancel** leaves the block as it was |
+| Edit Markdown (`⌥⌘U`, `Ctrl+Alt+U`) | Opens the block's Markdown source with a live preview. It is written back when you click or tap outside it, or with `⌘↩` / `Ctrl+Enter`; `Esc` leaves the block as it was |
 | Delete | Removes the block |
 
-To open the same menu from the keyboard, press `⌃↩` (`Ctrl+Enter` on Windows and Linux). `Shift+F10` and the Context Menu key work too.
+To open the same menu from the keyboard, press `⌘/` (`Ctrl+/` on Windows and Linux). `Shift+F10` and the Context Menu key work too.
 
 ## Moving blocks
 

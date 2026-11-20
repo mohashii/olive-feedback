@@ -17,7 +17,7 @@ Notion limits how fast pages can be read, so a large import can take several min
 
 ## What you get
 
-- The page you chose becomes the folder note (`index.md`) of the new folder. A page with subpages becomes a folder of its own, with the page as that folder's note.
+- The page you chose becomes a note at the top of the new folder, named after the page. A subpage that has subpages of its own gets a folder, with its note inside it under the same name.
 - Attachments and images are saved in an `assets` folder beside the page that uses them.
 - Anything Olive could not bring over, such as a database or an embed it could not fetch, is marked in the note with a warning, usually with a link to the original block in Notion.
 - When the import finishes, Olive says how many pages and attachments it brought in and whether anything needs your review. **Open the report** opens `Notion import report.md`, a note at the top of the imported folder that lists the imported pages and those items. **Open in Olive** switches to the imported folder.

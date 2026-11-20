@@ -14,11 +14,14 @@ The same editing shortcuts work in the Mac app and in the VS Code extension. The
 | Inline code | `⌘E` | `Ctrl+E` |
 | Link | `⌘K` | `Ctrl+K` |
 | Inline math | `⇧⌘E` | `Ctrl+Shift+E` |
+| Clear formatting | `⌘\` | `Ctrl+\` |
 | Paste as plain text | `⇧⌘V` | `Ctrl+Shift+V` |
 | Line break within a paragraph | `Shift+Enter` | `Shift+Enter` |
 | Find | `⌘F` | `Ctrl+F` |
 | Find next / previous | `⌘G` / `⇧⌘G` | `F3` / `Shift+F3` |
 | Replace | `⌥⌘F` | `Ctrl+H` |
+
+**Clear formatting** removes bold, italic, strikethrough, inline code and highlight from the selected text. Links and inline math stay. With nothing selected, it only affects what you type next. On a Japanese (JIS) keyboard, press `⌘¥` (`Ctrl+¥`) instead.
 
 ## Blocks
 
@@ -31,7 +34,8 @@ The same editing shortcuts work in the Mac app and in the VS Code extension. The
 | Quote | `⇧⌘B` | `Ctrl+Shift+B` |
 | Code block | `⌘⌥C` | `Ctrl+Alt+C` |
 | Move block up / down | `⌥↑` / `⌥↓` | `Alt+↑` / `Alt+↓` |
-| Open the block menu | `⌃↩` | `Ctrl+Enter` |
+| Open the block menu | `⌘/` | `Ctrl+/` |
+| Edit the block's Markdown | `⌥⌘U` | `Ctrl+Alt+U` |
 | Select the current block | `Esc` | `Esc` |
 | Extend the block selection | `Shift+↑` / `Shift+↓` | `Shift+↑` / `Shift+↓` |
 | Indent / outdent a list item | `Tab` / `Shift+Tab` | `Tab` / `Shift+Tab` |
@@ -57,13 +61,18 @@ On Windows and Linux these key combinations are left to VS Code and the operatin
 
 | Action | Keys |
 | --- | --- |
+| New note | `⌘N` |
+| New window | `⇧⌘N` |
+| Open a folder | `⌘O` |
 | Save now | `⌘S` |
+| Go to a note or search notes | `⌘P` |
 | Back / forward | `⌘[` / `⌘]` |
 | Today's daily note | `⌥⌘N` |
-| New window | `⌘N` |
+| Hide or show the sidebar | `⌃⌘S` |
+| Make the note's text larger / smaller / actual size | `⇧⌘.` / `⇧⌘,` / `⇧⌘0` |
 | Settings | `⌘,` |
 
-The text-formatting shortcuts are also listed in the **Format** menu.
+The text-formatting and paragraph shortcuts are also listed in the **Format** menu.
 
 ## In VS Code
 
