@@ -102,6 +102,6 @@ body:
     attributes:
       label: Before submitting
       options:
-        - label: I checked [Troubleshooting](https://github.com/mohashii/olive-feedback/blob/main/guide/troubleshooting.md)
+        - label: I checked [Troubleshooting](https://olive-markdown.pages.dev/guide/troubleshooting)
         - label: This snippet contains nothing confidential
           required: true

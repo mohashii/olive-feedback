@@ -1,8 +1,8 @@
 # Olive
 
 **This is not the source repository for Olive.** Olive is closed source. This repository
-exists so that documentation and issue tracking are public: the [user guide](guide/README.md),
-and the issue tracker where bugs, feature requests and questions are handled.
+holds the public issue tracker, where bugs, feature requests and questions are handled, and the
+privacy policy. The [user guide](https://olive-markdown.pages.dev/guide/) is on Olive's website.
 
 Olive lets you write Markdown without seeing the syntax. Formatting stays visible even under the cursor — headings, rich text, code, TeX math, tables and structured blocks — while the file on disk stays plain Markdown.
 
@@ -16,7 +16,7 @@ Olive lets you write Markdown without seeing the syntax. Formatting stays visibl
 | **VS Code extension** | [Olive — Visual Markdown Editor on the Marketplace](https://marketplace.visualstudio.com/items?itemName=mohashi.olive-markdown) |
 | iPad and iPhone apps | In development, not released |
 
-How to use Olive — on the Mac and in VS Code — is in the **[user guide](guide/README.md)**: blocks, keyboard shortcuts, folders and saving on the Mac, opening a file in Olive in VS Code, exporting to HTML and PDF.
+How to use Olive — on the Mac and in VS Code — is in the **[user guide](https://olive-markdown.pages.dev/guide/)**: blocks, keyboard shortcuts, folders and saving on the Mac, opening a file in Olive in VS Code, exporting to HTML and PDF.
 
 ## Reporting something
 
@@ -34,8 +34,8 @@ Two things do not belong in a public issue:
   reproduces the problem, and strip anything you would not publish.
 - **Security vulnerabilities.** See [SECURITY.md](SECURITY.md) for the private channel.
 
-Before opening a bug, [Troubleshooting](guide/troubleshooting.md) covers the failures that
-turn out to have a local cause. The [FAQ](guide/faq.md) covers what Olive does and does not do.
+Before opening a bug, [Troubleshooting](https://olive-markdown.pages.dev/guide/troubleshooting) covers the failures that
+turn out to have a local cause. The [FAQ](https://olive-markdown.pages.dev/guide/faq) covers what Olive does and does not do.
 
 ## Data handling
 

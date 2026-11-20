@@ -4,8 +4,8 @@ contact_links:
     url: https://github.com/mohashii/olive-feedback/security/advisories/new
     about: Report privately. Please do not open a public issue.
   - name: Troubleshooting
-    url: https://github.com/mohashii/olive-feedback/blob/main/guide/troubleshooting.md
+    url: https://olive-markdown.pages.dev/guide/troubleshooting
     about: Failures that usually have a local cause, on the Mac and in VS Code.
   - name: FAQ
-    url: https://github.com/mohashii/olive-feedback/blob/main/guide/faq.md
+    url: https://olive-markdown.pages.dev/guide/faq
     about: What Olive does and does not do, and which versions are available.

@@ -5,9 +5,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        The [user guide](https://github.com/mohashii/olive-feedback/blob/main/guide/README.md) covers how to use Olive on the Mac and in VS Code, the
-        [FAQ](https://github.com/mohashii/olive-feedback/blob/main/guide/faq.md) covers what Olive does and does not do, and
-        [Troubleshooting](https://github.com/mohashii/olive-feedback/blob/main/guide/troubleshooting.md) covers the common "it isn't working" cases.
+        The [user guide](https://olive-markdown.pages.dev/guide/) covers how to use Olive on the Mac and in VS Code, the
+        [FAQ](https://olive-markdown.pages.dev/guide/faq) covers what Olive does and does not do, and
+        [Troubleshooting](https://olive-markdown.pages.dev/guide/troubleshooting) covers the common "it isn't working" cases.
   - type: textarea
     id: question
     attributes:
